@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="com.ommyf.nequelar.about.AboutActivity"
+    >
+
+  <TextView
+      android:id="@+id/version"
+      android:layout_width="368dp"
+      android:layout_height="wrap_content"
+      style="@style/textWhiteBold"
+      />
+
+  <View
+      android:id="@+id/separator"
+      android:layout_width="368dp"
+      android:layout_height="1dp"
+      android:layout_below="@id/version"
+      android:layout_marginBottom="8dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorWhite"
+      />
+
+  <TextView
+      android:id="@+id/authors"
+      android:layout_width="368dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/separator"
+      android:text="Alex Zaitsev\nAlex Beliy"
+      style="@style/textWhite"
+      />
+</RelativeLayout>

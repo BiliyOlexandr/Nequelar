@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ommyf.nequelar">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+  <application
+      android:name=".NequelerApp"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name=".mainscreen.MainScreenActivity"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".LoginActivity" />
+    <activity
+        android:name=".categories.presentation.CategoriesActivity"
+        android:label="@string/categories" />
+    <activity
+        android:name=".products.presentation.ProductsActivity"
+        android:label="@string/products" />
+    <activity android:name=".product.ProductActivity" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <activity
+        android:name=".map.MapActivity"
+        android:label="@string/title_activity_map" />
+    <activity
+        android:name=".about.AboutActivity"
+        android:label="@string/about" />
+    <activity
+        android:name=".shops.ShopsActivity"
+        android:label="@string/shops"/>
+  </application>
+
+</manifest>

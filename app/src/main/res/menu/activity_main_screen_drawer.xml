@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/nav_categories"
+      android:title="Categories" />
+  <item
+      android:id="@+id/nav_products"
+      android:title="Products" />
+  <item
+      android:id="@+id/nav_shops"
+      android:title="Shops" />
+  <!--<item-->
+      <!--android:id="@+id/nav_favorite"-->
+      <!--android:title="Favorite" />-->
+  <item
+      android:id="@+id/nav_map"
+      android:title="Map" />
+  <item
+      android:id="@+id/nav_about"
+      android:title="About" />
+
+</menu>
